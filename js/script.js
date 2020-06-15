@@ -1,4 +1,4 @@
-document.getElementById('testo').innerHTML="prezzo biglietto: " + prezzoBiglietto;
+
 
 //chiedere all’utente il numero di chilometri che vuole percorrere
 var numeroKm = prompt("Quanti chilometri vuoi percorrere?");
@@ -10,16 +10,24 @@ var prezzo = 0.21;
 var prezzoBiglietto = prezzo * numeroKm;
 console.log(prezzo * numeroKm);
 //età
-var minorenni = Math.floor(Math.random() * 18) + 1;
-var scontoVenti = prezzoBiglietto * 0.2;       //20:100=x:prezzoBiglietto
-var prezzoScontoVenti = prezzoBiglietto - scontoVenti;
+
+       //20:100=x:prezzoBiglietto
+
 //
-var over = Math.floor(Math.random() * 65) + 1;
+
 
 //sconto del 20% per i minorenni
-if (minorenni < 18){
- prezzoBiglietto = prezzoScontoVenti;
+if (eta < 18){
+ prezzoBiglietto = prezzoBiglietto - prezzoBiglietto * 0.2;
 
 }
-
+else if (eta > 65){
+prezzoBiglietto = prezzoBiglietto - prezzoBiglietto * 0.4;
+}
 //sconto del 40% per gli over 65
+
+
+
+
+
+document.getElementById('testo').innerHTML="prezzo biglietto: " + prezzoBiglietto.toFixed(2);
