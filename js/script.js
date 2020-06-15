@@ -11,13 +11,14 @@ var prezzoBiglietto = prezzo * numeroKm;
 console.log(prezzo * numeroKm);
 //età
 var minorenni = Math.floor(Math.random() * 18) + 1;
-var scontoVenti = prezzoBiglietto * 20 / 100;       //20:100=x:prezzoBiglietto
+var scontoVenti = prezzoBiglietto * 0.2;       //20:100=x:prezzoBiglietto
+var prezzoScontoVenti = prezzoBiglietto - scontoVenti;
 //
 var over = Math.floor(Math.random() * 65) + 1;
 
 //sconto del 20% per i minorenni
 if (minorenni < 18){
- prezzoBiglietto = scontoVenti;
+ prezzoBiglietto = prezzoScontoVenti;
 
 }
 
