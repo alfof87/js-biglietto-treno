@@ -66,3 +66,29 @@ a{
   font-size: 10px;
   font-family: monospace;
 }
+#train-img{
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+#train-img img{
+  margin: 20px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+#train-img img:hover{
+  filter: grayscale(1);
+}
+footer{
+  width: 100%;
+  height: 80px;
+  background-color: #B22222;
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+}
+footer i{
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+}
