@@ -20,6 +20,10 @@ main{
   border: 2px solid #8B0000;
   font-size: 12px;
   text-align: center;
+  margin-top: 20px;
+}
+#logo{
+  background-color: #B22222;
 }
 #logo img{
   width: 100px;
