@@ -30,4 +30,4 @@ prezzoBiglietto = prezzoBiglietto - prezzoBiglietto * 0.4;
 
 
 
-document.getElementById('testo').innerHTML="prezzo biglietto: " + prezzoBiglietto.toFixed(2);
+document.getElementById('testo').innerHTML="prezzo biglietto: " + prezzoBiglietto.toFixed(2) +"€";
